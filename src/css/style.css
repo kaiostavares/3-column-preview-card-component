@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem;
+  background-color: hsl(0deg, 0%, 95%);
+  font-weight: 400;
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.card#sedan {
+  background-color: hsl(31deg, 77%, 52%);
+}
+
+.card#suv {
+  background-color: hsl(184deg, 100%, 22%);
+}
+
+.card#luxury {
+  background-color: hsl(179deg, 100%, 13%);
+}
+
+.card {
+  padding: 2.5rem;
+}
+.card .icon {
+  margin-bottom: 2rem;
+}
+.card .title {
+  color: hsl(0deg, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.card .carInformation {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  line-height: 1.6;
+  padding-right: 0.6rem;
+}
+.card a {
+  margin-top: 3.5rem;
+  text-decoration: none;
+  background-color: hsl(0deg, 0%, 95%);
+  padding: 1rem 2rem;
+  display: inline-block;
+  border-radius: 2rem;
+  border: 3px solid hsl(0deg, 0%, 95%);
+  transition: all 0.3s ease-in-out;
+}
+.card #sedanBtn {
+  color: hsl(31deg, 77%, 52%);
+}
+.card #sedanBtn:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: hsl(0deg, 0%, 95%);
+}
+.card #suvBtn {
+  color: hsl(184deg, 100%, 22%);
+}
+.card #suvBtn:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: hsl(0deg, 0%, 95%);
+}
+.card #luxuryBtn {
+  color: hsl(179deg, 100%, 13%);
+}
+.card #luxuryBtn:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: hsl(0deg, 0%, 95%);
+}
+
+@media only screen and (max-width: 750px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .container {
+    margin: 2rem 0.5rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

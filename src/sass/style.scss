@@ -1,0 +1,118 @@
+@import "./variables.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem;
+    background-color: $bkg_heading_bttn-color;
+    font-weight: 400;
+    font-size: $mainFontSize;
+    font-family: $text-fontFamily;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.card#sedan{
+    background-color: $sedan-card-color;
+}
+
+.card#suv{
+    background-color: $suv-card-color;
+}
+
+.card#luxury{
+    background-color: $luxury-card-color;
+}
+
+.card{
+    padding: 2.5rem;
+
+    .icon{
+        margin-bottom: 2rem;
+    }
+
+    .title{
+        color: $bkg_heading_bttn-color;
+        font-family: $title-fontFamily;
+        font-weight: 700;
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .carInformation{
+        color: $paragraph-color;
+        line-height: 1.6;
+        padding-right: 0.6rem;
+    }
+
+    a{
+        margin-top: 3.5rem;
+        text-decoration: none;
+        background-color: $bkg_heading_bttn-color;
+        padding: 1rem 2rem;
+        display: inline-block;
+        border-radius: 2rem;
+        border: 3px solid $bkg_heading_bttn-color;
+        transition:all 0.3s ease-in-out;
+    }
+
+    #sedanBtn{
+        color: $sedan-card-color;
+    }
+
+    #sedanBtn:hover{
+        cursor: pointer;
+        background-color: transparent;
+        color: $bkg_heading_bttn-color;
+    }
+
+    #suvBtn{
+        color: $suv-card-color;
+    }
+
+    #suvBtn:hover{
+        cursor: pointer;
+        background-color: transparent;
+        color: $bkg_heading_bttn-color;
+    }
+
+    #luxuryBtn{
+        color: $luxury-card-color;
+    }
+
+    #luxuryBtn:hover{
+        cursor: pointer;
+        background-color: transparent;
+        color: $bkg_heading_bttn-color;
+    }
+
+}
+
+@media only screen and (max-width:750px) {
+    .container{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width:426px) {
+    .container{
+        margin: 2rem 0.5rem;
+    }
+}

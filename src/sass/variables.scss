@@ -1,0 +1,16 @@
+//Primary-colors
+$sedan-card-color:hsl(31, 77%, 52%);
+$suv-card-color:hsl(184, 100%, 22%);
+$luxury-card-color:hsl(179, 100%, 13%);
+
+//Neutral-colors
+$paragraph-color:hsla(0, 0%, 100%, 0.75);
+$bkg_heading_bttn-color:hsl(0, 0%, 95%);
+
+//Body copy font size
+$mainFontSize:15px;
+
+//Font-familys
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+$text-fontFamily:'Lexend Deca', sans-serif;
+$title-fontFamily: 'Big Shoulders Display', cursive;
